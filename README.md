@@ -1,0 +1,1 @@
+# diplom_basic-1
