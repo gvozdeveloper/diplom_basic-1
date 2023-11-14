@@ -46,6 +46,20 @@ body {
     display: flex;
     gap: 30px;
 }
+.header-icon a {
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.header-icon a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
+ .banner {
+    display: flex;
+    height: 852px;
+ }
+ 
 .content {
     flex: 0 0 676px;
     padding-top: 170px;
@@ -58,6 +72,12 @@ body {
     letter-spacing: 1.44px;
     text-transform: uppercase;
 }
+.arrow {
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+ }
 .visual {
     flex-grow: 1;
     display: flex;
