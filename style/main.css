@@ -99,7 +99,8 @@ body {
     font-weight: 700;
     line-height: 150%; /* 24px */
     text-transform: uppercase;
-    background: #FBF138;
+    color: #2B3541;
+    background-color: #FBF138;
     text-align: center;
     text-decoration: none;
     padding: 20px 30px;
@@ -107,17 +108,23 @@ body {
     border: 0;
     border: 0 solid #FBF138;
     transition: 0.3s;
+    cursor: pointer;
 }
 .content-link:hover {
-    background-color: transparent;
-    color: #2B3541;
+    background-color: #2B3541;
+    color: #FBF138;
 }
-.arrow {
-    background-image: url(../images/arrow.svg);
+.banner-arrow {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
- }
+    width: 52px;
+    height: 55px;
+    
+}
+.banner .banner-arrow {
+    top: 936px;
+}
 .visual {
     flex-grow: 1;
     display: flex;
@@ -130,9 +137,20 @@ body {
     opacity: 0.2;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
 }
-.banner img {
+.visual img {
     width: 996px;
     position: absolute;
     right: -172px;
     top: 33px;
+}
+section {
+    margin-top: 160px;
+}
+.menu-title {
+    color: #2B3541;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
