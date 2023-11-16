@@ -53,13 +53,16 @@ body {
     transform: scale(1.2);
     opacity: 1;
  }
+
 .banner {
     display: flex;
+    justify-content: space-between;
+    position: relative;
     height: 852px;
 }
- 
+
 .content {
-    flex: 0 0 676px;
+    display: grid;
     padding-top: 170px;
     padding-bottom: 170px;
 }
@@ -70,70 +73,48 @@ body {
     letter-spacing: 1.44px;
     text-transform: uppercase;
     margin-bottom: 40px;
-    color: var(--dark, #2B3541);
+    color: #2B3541;
 }
-.content-description {
+.content h2 {
     color: #2B3541;
     font-size: 40px;
     font-weight: 400;
     line-height: 125%;
     margin-bottom: 20px;
 }
-.content-text {
-    display: grid;
-    width: 297px;
+.description {
     padding-left: 92px;
+    width: 297px;
+
 }
-.content-txt {
+.description-text {
     color: var(--dark, #2B3541);
     font-size: 18px;
     font-weight: 400;
-    line-height: 150%; /* 27px */
     margin-bottom: 40px;
 }
-.content-link {
-    font-family: Montserrat;
+.description-link {
     font-size: 16px;
     font-weight: 700;
-    line-height: 150%; /* 24px */
     text-transform: uppercase;
     color: #2B3541;
     background-color: #FBF138;
-    text-align: center;
     text-decoration: none;
     padding: 20px 30px;
-    width: 252px;
-    border: 0;
     border: 0 solid #FBF138;
     transition: 0.3s;
     cursor: pointer;
 }
-.content-link:hover {
+.description-link:hover {
     background-color: #2B3541;
     color: #FBF138;
 }
-.banner-arrow {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 52px;
-    height: 55px;
-    
-}
-.banner .banner-arrow {
-    top: 927px;
-}
+
 .visual {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
     position: relative;
-}
-.visual-bn {
-    width: 464px;
-    height: 100%;
-    opacity: 0.2;
-    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
 }
 .visual img {
     width: 996px;
@@ -141,6 +122,23 @@ body {
     right: -172px;
     top: 33px;
 }
+.visual-bn {
+    width: 464px;
+    height: 100%;
+    opacity: 0.2;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+}
+.arrow {
+    position: absolute;
+    background-image: url(../images/arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 55px;
+    left: 0;
+    bottom: 0;
+}  
+
 section {
     margin-top: 160px;
 }
@@ -219,4 +217,13 @@ section {
 }
 .menu-grid-content.menu-grid-content-text {
     align-items:flex-end;
+}
+
+
+/* Responsive */
+
+@media (min-width: 901px) {
+    .header-burger {
+        display: none;
+    }
 }

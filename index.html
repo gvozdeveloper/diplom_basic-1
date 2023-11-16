@@ -15,12 +15,15 @@
         <div class="container">
             <div class="header">
                 <div class="header-item">
-                    <a href="index.html" class="header-logo"></a>
+                    <a href="#" class="header-logo"></a>
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
                     <nav>
                         <ul class="header-nav">
-                            <li><a href="index.html" class="active">Мероприятия</a></li>
-                            <li><a href="#">Расписание</a></li>
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="#events" class="events">Мероприятия</a></li>
+                            <li><a href="#schedule" class="schedule">Расписание</a></li>
+                            <li><a href="#about" class="about">О компании</a></li>
                         </ul>
                     </nav>    
                 </div>
@@ -31,98 +34,97 @@
             </div>
         </div>
     </header>
-    <main>
+    <div class="cover">
         <div class="container">
             <div class="banner">
                 <div class="content">
                     <h1 class="content-title">онлайн тренировки любой сложности</h1>
-                    <h2 class="content-description">&gt; 15&nbsp;&nbsp;тренировок</h2>
-                    <div class="content-text">
-                        <span class="content-txt">в области спортивной физиологии и нутрициологии</span>
-                        <button class="content-link">узнать подробнее</button>
+                    <h2>&gt; 15&nbsp;&nbsp;тренировок</h2>
+                    <div class="description">
+                        <p class="description-text">в области спортивной физиологии и нутрициологии</p>
+                        <a href="#events" class="description-link">узнать подробнее</a>
                     </div>
                 </div>
-                <div class="banner-arrow">
-                    <img src="images/arrow.svg" alt="">
-                </div>
-                <div class="visual">
+               <div class="visual">
                     <div class="visual-bn"></div>
-                    <img src="images/girl.png" alt="">
+                    <img src="images/girl.png" alt="girl">
+                </div>
+                <a href="#events" class="arrow"></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="menu">
+            <div class="container">
+                <div class="menu-header">
+                    <h2 class="menu-title">Ближайшие события</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="images/maraphon@2x.png" alt="Марафон выносливости">
+                        </div>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="images/Vebinar 1@2x.png" alt="Как стать тренером?">
+                        </div>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="images/Vebinar 2@2x.png" alt="Йога, как стиль жизни">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-header">
+                    <h2 class="menu-title rasp">Расписание тренировок</h2>
+                    <p>22 - 28 июня</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-grid-rasp">
+                        <p class="menu-grid-content-data">22 июня, 10:00</p>
+                        <img src="images/body.svg" alt="body">
+                        <p class="menu-grid-content-text">Функциональный тренинг</p>
+                    </div>
+                    <div class="menu-grid-rasp">
+                        <div class="menu-grid-content">
+                            <p class="menu-grid-content-data">24 июня, 10:00</p>
+                            <img src="images/bottle.svg" alt="bottle">
+                            <p class="menu-grid-content-text">Body sculpt</p>
+                        </div>    
+                    </div>
+                    <div class="menu-grid-rasp">
+                        <div class="menu-grid-content">
+                            <p class="menu-grid-content-data">26 июня, 10:00</p>
+                            <img src="images/dumbbell.svg" alt="dumbbell">
+                            <p class="menu-grid-content-text">L.A.B.</p>
+                        </div>    
+                    </div>
+                    <div class="menu-grid-rasp">
+                        <div class="menu-grid-content">
+                            <p class="menu-grid-content-data">23 июня, 10:00</p>
+                            <img src="images/jump.svg" alt="jump">
+                            <p class="menu-grid-content-text">Силовой микс</p>
+                        </div>    
+                    </div>
+                    <div class="menu-grid-rasp">
+                        <div class="menu-grid-content">
+                            <p class="menu-grid-content-data">25 июня, 10:00</p>
+                            <img src="images/heart.svg" alt="heart">
+                            <p class="menu-grid-content-text">Дыхательные практики</p>
+                        </div>
+                    </div>
+                    <div class="menu-grid-rasp">
+                        <div class="menu-grid-content">
+                            <p class="menu-grid-content-data">27 июня, 10:00</p>
+                            <img src="images/weight.svg" alt="weight">
+                            <p class="menu-grid-content-text">Комплексная разминка</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <section class="menu">
-                <div class="container">
-                    <div class="menu-header">
-                        <h2 class="menu-title">Ближайшие события</h2>
-                    </div>
-                    <div class="menu-grid">
-                        <div class="menu-grid-item">
-                            <div class="menu-grid-cover">
-                                <img src="images/maraphon@2x.png" alt="Марафон выносливости">
-                            </div>
-                        </div>
-                        <div class="menu-grid-item">
-                            <div class="menu-grid-cover">
-                                <img src="images/Vebinar 1@2x.png" alt="Как стать тренером?">
-                            </div>
-                        </div>
-                        <div class="menu-grid-item">
-                            <div class="menu-grid-cover">
-                                <img src="images/Vebinar 2@2x.png" alt="Йога, как стиль жизни">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-header">
-                        <h2 class="menu-title rasp">Расписание тренировок</h2>
-                        <p>22 - 28 июня</p>
-                    </div>
-                    <div class="menu-grid">
-                        <div class="menu-grid-rasp">
-                            <p class="menu-grid-content-data">22 июня, 10:00</p>
-                            <img src="images/body.svg" alt="body">
-                            <p class="menu-grid-content-text">Функциональный тренинг</p>
-                        </div>
-                        <div class="menu-grid-rasp">
-                            <div class="menu-grid-content">
-                                <p class="menu-grid-content-data">24 июня, 10:00</p>
-                                <img src="images/bottle.svg" alt="bottle">
-                                <p class="menu-grid-content-text">Body sculpt</p>
-                            </div>    
-                        </div>
-                        <div class="menu-grid-rasp">
-                            <div class="menu-grid-content">
-                                <p class="menu-grid-content-data">26 июня, 10:00</p>
-                                <img src="images/dumbbell.svg" alt="dumbbell">
-                                <p class="menu-grid-content-text">L.A.B.</p>
-                            </div>    
-                        </div>
-                        <div class="menu-grid-rasp">
-                            <div class="menu-grid-content">
-                                <p class="menu-grid-content-data">23 июня, 10:00</p>
-                                <img src="images/jump.svg" alt="jump">
-                                <p class="menu-grid-content-text">Силовой микс</p>
-                            </div>    
-                        </div>
-                        <div class="menu-grid-rasp">
-                            <div class="menu-grid-content">
-                                <p class="menu-grid-content-data">25 июня, 10:00</p>
-                                <img src="images/heart.svg" alt="heart">
-                                <p class="menu-grid-content-text">Дыхательные практики</p>
-                            </div>
-                        </div>
-                        <div class="menu-grid-rasp">
-                            <div class="menu-grid-content">
-                                <p class="menu-grid-content-data">27 июня, 10:00</p>
-                                <img src="images/weight.svg" alt="weight">
-                                <p class="menu-grid-content-text">Комплексная разминка</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
- 
-            </section>
-        </div>
+        </section>
     </main>
 
 </body>
