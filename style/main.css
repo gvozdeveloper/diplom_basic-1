@@ -164,7 +164,7 @@ section {
     margin-bottom: 160px;
 }
 .events-grid-marathon {
-    background-image: url(/images/maraphon@2x.png);
+    background-image: url(../images/maraphon@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -287,4 +287,11 @@ section {
     .header-burger {
         display: none;
     }
+
+}
+@media (max-width: 765px) {
+    .nav {
+        display: none;
+}
+
 }
