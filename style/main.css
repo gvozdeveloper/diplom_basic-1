@@ -139,7 +139,7 @@ body {
     bottom: 0;
 }  
 
-section {
+.events {
     margin-top: 160px;
 }
 
@@ -287,6 +287,7 @@ section {
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: 1px solid transparent;
     cursor: pointer;
+    opacity: 1;
 }
 .schedule-item:nth-child(1)  {
     grid-row: 1 / 2;
@@ -361,8 +362,56 @@ section {
     font-weight: 700;
     margin-bottom: 0;
 }
-
-
+.mailing {
+    background-color: #F3F3F3;
+}
+.mailing-box {
+    text-align: center;
+}
+.mailing-title {
+    color: #2B3541;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 0;
+}
+.mailing-title::before {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    z-index: -1;
+    left: -22px;
+    top: -21px;
+}
+.mailing-form {
+    display: flex;
+    justify-content: center;
+}
+.mailing-content {
+    
+}
+.mailing-btn {
+    background:  #FBF138;
+    box-shadow: 0 13px 24px rgba(70, 86, 106, 0.28);
+    border: none;
+    padding: 20px 49px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #2B3541;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.mailing-btn:hover {
+    background: #2B3541;
+    box-shadow: 0 13px 24px rgba(251, 241, 56, 0.2);
+    color:#FBF138
+}
 
 /* Modal */
 
