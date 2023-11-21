@@ -34,11 +34,15 @@ body {
 }
 .header-nav a {
     color: #2B3541;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
-
+    transition: .2s;
+    border-bottom: 1px solid transparent;
+}
+.active:hover {
+    border-bottom: 1px #2B3541 solid;
+    padding-bottom: 5px;
 }
 .header-icon {
     display: flex;
