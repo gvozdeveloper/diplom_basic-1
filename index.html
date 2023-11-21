@@ -159,20 +159,79 @@
                     <h2 class="mailing-title">Подпишитесь на рассылку</h2>
                     <form action="" class="mailing-form">
                         <div class="mailing-content">
-                            <input type="email" placeholder="Ваш e-mail">
+                            <input type="email" placeholder="Ваш e-mail" class="mailing-email">
                             <div class="mailing-checkbox">
-                                <input type="checkbox" class="mailing-checkbox" id="mailingCheckbox">
+                                <input type="checkbox" class="custom-checkbox" id="mailingCheckbox">
                                 <label for="mailingCheckbox">Согласен с обработкой</label>
                                 <a href="#" class="personal_data">персональных данных</a>
                             </div>
                         </div>
-                        <button class="mailing-btn">подписаться</button>
+                        <button type="submit" class="mailing-btn"><span class="mailing-btn-text">подписаться</span></button>
                     </form>
 
                 </div>
             </div>
         </section>
-    </main>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-box">
+                    <div class="about-content">
+                        <h2 class="about-title">О компании</h2>
+                        <p class="about-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+                        <a href="#" class="about-link">записаться</a>
+                    </div>
+                    <div class="about-img"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-grid-item">
+                        <p class="about-grid-title">Экономия времени</p>
+                        <span class="about-grid-text">Не нужно тратить время на дорогу</span>
+                    </div>
+                    <div class="about-grid-item">
+                        <p class="about-grid-title">Индивидуальный подход</p>
+                        <span class="about-grid-text">Внимание тренера пренадлежит только вам</span>
+                    </div>
+                    <div class="about-grid-item">
+                        <p class="about-grid-title">Экономия денег</p>
+                        <span class="about-grid-text">Средняя цена одной тренировки - 700₽</span>
+                    </div>
+                    <div class="about-grid-item">
+                        <p class="about-grid-title">Опытный персонал</p>
+                        <span class="about-grid-text">Стаж работы у наших тренеров от 5 лет</span>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="header">
+                <div class="header-item">
+                    <a href="#" class="header-logo"></a>
+                    <nav>
+                        <ul class="header-nav">
+                            <li><a href="#events" class="events">Мероприятия</a></li>
+                            <li><a href="#schedule" class="schedule">Расписание</a></li>
+                            <li><a href="#about" class="about">О компании</a></li>
+                        </ul>
+                    </nav>    
+                </div>
+                <div class="header-icon">
+                    <div class="footer-mail">
+                        <div class="footer-item"></div>
+                        <a href="#" class="footer-link">info@freefit.com</a>
+                    </div>
+                    <a href="#"><img src="images/in.svg" alt=""></a>
+                    <a href="#"><img src="images/fb.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-description">
+                <p>© 2022, Все права защищены</p>
+                <p>Сделано в рамках курса учебной платформы <a href="https://frontendblok.com/" target="_blank" class="footer-description-link">Annblok</a> </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
