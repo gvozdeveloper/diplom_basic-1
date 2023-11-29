@@ -655,6 +655,12 @@ footer .header-nav a {
 
 /* Responsive */
 
+@media (max-width: 1000px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
 @media (min-width: 769px) {
 
     .header-burger {
@@ -672,6 +678,7 @@ footer .header-nav a {
     .nav {
         display: none;
     }
+
     .events-text {
         left: 0;
     }
